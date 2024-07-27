@@ -1,0 +1,126 @@
+/* http://gocz.ch/boilerplates/ 
+    v2.0 | 20240727
+    License: none (public domain)
+*/
+
+
+
+/* Basic reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* Cursor for HTML elements */
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* smooth scroll behavior */
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+        }
+    }
+
+
+
+
+
+/* --- DEVICE BREAKPOINTS --- */
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {...}
+
+
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {...}
+ 
+
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {...}
+ 
+
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {...}
+ 
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {...} 
+
+
+
+ /* --- or three view mode device breakpoint */
+
+
+
+ /* Mobile devices (0 - 768) */
+ @media only screen and (max-width: 768px) {...} 
+
+ /* Tablet devices (769 - 1023) */
+ @media only screen and (min-width: 769px) and (max-width: 768px) {...} 
+
+ /* PC devices (1024 - ~) */
+  @media only screen and (min-width: 1024px) {...} 
+
