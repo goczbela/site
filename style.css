@@ -3,7 +3,10 @@
     License: none (public domain)
 */
 
-
+/*Instead of import your fonts here, better if you use the standard HTML link method in the .html file
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Quicksand:wght@300..700&display=swap');
+*/
 
 /* Basic reset */
 
@@ -121,6 +124,6 @@ table {
  /* Tablet devices (769 - 1023) */
  @media only screen and (min-width: 769px) and (max-width: 768px) {...} 
 
- /* PC devices (1024 - ~) */
+ /* Screen devices (1024 - ~) */
   @media only screen and (min-width: 1024px) {...} 
 
