@@ -87,49 +87,35 @@ table {
 
 
 
-/* --- YOUR CODE HERE --- */
-/* --- YOUR CODE HERE --- */
-/* --- YOUR CODE HERE --- */
-
-
-
-
 /* --- DEVICE BREAKPOINTS --- */
-
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {...}
-
-
-
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {...}
- 
+/* Mobile devices (0 - 768) */
+/* Tablet devices (769 - 1023) */
+/* Screen devices (1024 - ~) */
 
 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {...}
- 
-
-
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {...}
- 
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {...} 
-
-
-
- /* --- or three view mode device breakpoint */
 
 
 
  /* Mobile devices (0 - 768) */
- @media only screen and (max-width: 768px) {...} 
+@media only screen and (max-width: 768px) {
+
+    html {
+        background-color: white;
+    }
+
+}
+
+
+
+
+
 
  /* Tablet devices (769 - 1023) */
- @media only screen and (min-width: 769px) and (max-width: 768px) {...} 
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+    
 
  /* Screen devices (1024 - ~) */
-  @media only screen and (min-width: 1024px) {...} 
+@media only screen and (min-width: 1024px) {
+    
+} 
 
