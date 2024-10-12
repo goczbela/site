@@ -113,9 +113,12 @@ table {
  /* Tablet devices (769 - 1023) */
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
     
+}
 
  /* Screen devices (1024 - ~) */
 @media only screen and (min-width: 1024px) {
     
-} 
+}
+
+
 
