@@ -40,7 +40,7 @@
 
 <div id="container">
 
-    <nav>
+    <header>
         <div id="logo">
             <img src="img/BG_counselling-mendrisio_logo.jpg" alt="Counselling Mendrisio">
         </div>
@@ -57,8 +57,7 @@
             <div>Counsellor in Analisi Transazionale</div>
             <div>in formazione</div>
         </div>
-
-    </nav>
+    </header>
 
     <div>
         <p>Concediti il permesso di</p>
@@ -113,12 +112,11 @@
         Il Counselling è una relazione di aiuto e orientamento che si occupa in prevalenza di problemi interpersonali o sociali della persona, limitati e specifici all’area di conflitto che li ha evidenziati e scatenati.
         Il suo obiettivo è quello di sostenere la persona nell’ascolto di sé stessa, di facilitarla nelle proprie capacità decisionali, attivando le risorse e le potenzialità creative e risolutive che ogni individuo ha dentro di sé.
         Non è un intervento terapeutico centrato su una patologia psichica, bensì un intervento non terapeutico centrato sulla salute e sul benessere dell’individuo.
-        Con il Counselling si agevola la persona in un percorso di consapevolezza del proprio disagio, sostenendola a scoprire poi qual è, per lei stessa, il modo migliore per superarlo e contribuire così attivamente al proprio benessere, sia psicologico che fisico.
+        Con il Counselling si agevola la persona in un percorso di consapevolezza del proprio disagio, sostenendola a scoprire poi qual è, per lei stessa, il modo migliore per superarlo e contribuire così attivamente al proprio benessere, sia psicologico che fisico. <span>(Omeonatura.ch)</span>
     </p>
 
     <h3>Quando e a chi?</h3>
 
-    <br>
         - se hai la sensazione di essere ad un bivio<br>
         - se stai vivendo una situazione di crisi<br>
         - se hai la voglia di cambiare ciò che non ti soddisfa più<br>
@@ -144,8 +142,52 @@
     <h3>Durata di una seduta</h3>
     <p>La durata di una seduta è di circa 45-50 minuti</p>
 
-    <h3>Costo	di una seduta</h3>
-    <p>Non applico un prezzo definito, è a offerta libera</p>
+    <h3>Costo di una seduta</h3>
+    <p>La prima seduta è gratuita, dopo ogni seduta è 30.- CHF</p>
+
+    <footer>
+
+        <form id="emailForm" action="emailFormSender.php" method="POST" autocomplete="off" spellcheck="false">
+            <div class="formHeader">
+                <p>Hai domande?</p>
+                <p>Scrivici, per favore:</p>
+            </div>
+            <div class="inputField">
+                <label for="clientName">Name:</label>
+                <input id="clientName" type="text" name="clientName" placeholder="John Doe">
+
+                <label for="clientEmail">Email:</label>
+                <input id="clientEmail" type="email" name="clientEmail" placeholder="johndoe@domain.com">
+
+                <label for="clientMessage">Tuo Messaggio:</label>
+                <textarea id="clientMessage" name="clientMessage" cols="30" rows="5"  placeholder="Tuo messaggio qui ..."></textarea>
+            </div>
+            <button id="submit" type="submit">send</button>
+        </form>
+
+        <div class="contact">
+            <h2>Come funziona</h2>
+
+            <h3>Ricevo su appuntamento a Mendrisio</h3>
+
+            <div class="data-container">
+                <p>Orsolya Cadenazzi</p>
+                <p>Tel/WhatsApp: 079 823 66 46</p>
+                <p><a href="mailto:info@counselling-mendrisio.com">Email: info@counselling-mendrisio.com</a></p>
+            </div>
+
+            <div class="data-container">
+                <p>Residenza Fior di Loto</p>
+                <p>Via al Gas 12/G-12/F</p>
+                <p>6850 Mendrisio</p>
+            </div>
+
+            <div class="map">
+                <a href="https://www.google.com/maps/place/Via+al+Gas+12,+6850+Mendrisio/@45.8717154,8.9758986,17z/data=!4m10!1m2!2m1!1sResidenza+Fior+di+Loto,+Via+al+Gas+12%2FG-12%2FF,+6850+Mendrisio!3m6!1s0x478429c93d52babb:0x24881a45aed4fa83!8m2!3d45.8717154!4d8.9784735!15sCjxSZXNpZGVuemEgRmlvciBkaSBMb3RvLCBWaWEgYWwgR2FzIDEyL0ctMTIvRiwgNjg1MCBNZW5kcmlzaW-SARFjb21wb3VuZF9idWlsZGluZ-ABAA!16s%2Fg%2F11swc8w1qr?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D"><img src="img/map.jpg" alt="Counselling Mendrisio - Map"></a>
+            </div>
+        </div>
+
+    </footer>
 
 </div>
 </body>

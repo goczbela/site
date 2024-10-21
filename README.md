@@ -1,4 +1,4 @@
-# SYMPLE JS HTML CSS PHP SITE TEMPLATE
+# SIMPLE JS HTML CSS PHP SITE TEMPLATE
 # by Bela Gocz
 ## FREE symple and easy-installing introducing site
 ### HTML, CSS, JavaScript, PHP
