@@ -123,10 +123,10 @@ table {
 /* nav icon */
 
 #navIcon {
-    width: 60px;
-    height: 45px;
+    width: 20px;
+    height: 15px;
     position: relative;
-    margin: 50px auto;
+    margin-left: 0px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -141,9 +141,9 @@ table {
 #navIcon span {
     display: block;
     position: absolute;
-    height: 9px;
+    height: 3px;
     width: 100%;
-    background: #d3531a;
+    background: var(--c-viola-light);
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -162,15 +162,15 @@ table {
 }
 
 #navIcon span:nth-child(2) {
-    top: 18px;
+    top: 6px;
 }
 
 #navIcon span:nth-child(3) {
-    top: 36px;
+    top: 12px;
 }
 
 #navIcon.open span:nth-child(1) {
-    top: 18px;
+    top: 6px;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -o-transform: rotate(135deg);
@@ -183,13 +183,16 @@ table {
 }
 
 #navIcon.open span:nth-child(3) {
-    top: 18px;
+    top: 6px;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
 
+
+
+/* body */
 
 body {
     margin: 0;
@@ -214,34 +217,148 @@ a {
     height: 100vh;
 }
 
+
+
+/* header, logo, navIcon */
+
 header {
+    font-size: 16px;
     width: 100%;
+    height: 68px;
     background-color: var(--c-viola-dark);
+    padding: 4px 6px 6px;
+    color: var(--c-viola-light);
+
+    display: grid;
+    grid-template-areas:
+        "logo nav txt1"
+        "logo txt2 txt2"
+        "logo txt3 txt3";
+    grid-template-rows: 20px 20px 20px;
+    grid-template-columns: 1fr auto auto;
+    
+}
+
+#logo {
+    grid-area: logo;
+    margin: 0px auto 0px 0px;
+}
+
+
+#logo img {
+    height: 60px;
+}
+
+#navIcon {
+    grid-area: nav;
+}
+
+header div:nth-child(3) {
+    grid-area: txt1;
+}
+
+header div:nth-child(4) {
+    grid-area: txt2;
+}
+
+header div:nth-child(5) {
+    grid-area: txt3;
+}
+
+
+header div:nth-child(3),
+header div:nth-child(4),
+header div:nth-child(5)
+    {
+    text-align: right;
 }
 
 
 
+/* motto, .h2Title, h2, .txt, .list, .boldFont */
 
+#motto {
 
-
-
-
-
-
-
-
-img {
-    margin: 0 auto;
-    width: 80%;
-    max-width: 420px;
 }
-main {
-    width: 100%;
-    background-color: #d8d8d8;
-    text-align: center;
+
+#motto div {
+    width: fit-content;
+    margin: 40px auto 30px;
+    text-align: left;
+}
+
+
+.h2Title,
+h2 {
+    font-family: "Quicksand" , "sans-serif";
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--c-viola-dark);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 20px auto 10px;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.txt {
+    margin: 0px 10px 10px 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.list {
+    display: inline-block;
+    margin: 0px auto 30px;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+
+
+/* prenota button */
+
+#prenota {
+    display: flex;
+    width: 200px;
+    height: 44px;
+    margin: 30px auto 50px;
+    background-color: var(--c-viola-dark);
+    border: 2px solid var(--c-viola);
+    border-radius: 22px;
+    font-family: "Quicksand" , "sans-serif";
+    font-weight: 500;
     font-size: 20px;
-    color: #0d0d0d;
-    padding-bottom: 20px;
+    color: var(--c-viola-light);
+    align-items: center;
+    text-align: center;
+}
+
+#prenota p {
+    margin-left: auto;
+}
+
+#prenota img {
+    height: 28px;
+    margin: 0px auto 0px 8px;
+}
+
+.membro {
+    margin: 30px auto 10px;
 }
 
 
@@ -249,33 +366,50 @@ main {
 
 
 
+/* images */
+
+.lotus,
+.hullam,
+.trees {
+    margin-bottom: 40px;
+}
+.orsi {
+    margin: 20px auto;
+}
+
+.lotus img,
+.hullam img {
+    width: 100%;
+    max-width: 1980px;
+}
+.trees img {
+    width: 100%;
+    max-width: 1282px;
+}
+.orsi img {
+    width: 80%;
+    max-width: 1536px;
+}
+
+#membroContainer {
+    display: grid;
+    grid-template-row: 1fr;
+}
+
+#sgfb,
+#cosi {
+    width: 80%;
+    max-width: 707px;
+}
 
 
+
+/* email form */
 
 label, input, button {
     display: block;
     margin: 0 auto;
 }
-h1 {
-    margin: 70px auto 40px;
-    letter-spacing: 10px;
-    font-size: 40px;
-}
-h2 {
-    font-size: 30px;
-}
-h3 {
-    font-weight: 100;
-    font-size: 12px;
-}
-
-footer {
-    color: #d8d8d8;
-    padding-bottom: 200px;
-}
-
-
-
 
 #emailForm {
     width: 90%;
@@ -315,6 +449,25 @@ footer {
     margin: 30px auto 30px;
     padding: 5px;
 }
+
+
+
+
+
+
+footer {
+    color: #d8d8d8;
+    padding-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
 
 /*
 ------------------MEDIAQUERIES-----------------------
