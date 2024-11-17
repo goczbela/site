@@ -52,39 +52,91 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
-    <meta charset="utf-8" />
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="./assets/counselling-mendrisio_favicon.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta name="description" content="html boilerplate">
+    <meta name="keywords" content="html tutorial template">
+    <meta name="author" content="John Doe">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRoboto:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/assets/Mandali-Regular.woff" as="font" type="font/woff" crossorigin>
 
-    <meta http-equiv = "refresh" content = "5; url = https://www.counselling-mendrisio.com" />
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- JS -->
+    <script src="app.js" defer></script>
+    
+
+    <title>Messaggio OK - Counselling Mendrisio</title>
 
 </head>
 
 <body>
 
+<div id="container">
 
-
-    <div id="container">
-
-        <header>
-            <img src="counselling-mendrisio_logo.jpg" alt="">
-        </header>
-
-
-        <div class="gradient_silver_nordSud">
+    <header>
+        <div id="logo">
+            <img src="img/counselling-mendrisio_logo.svg" alt="Counselling Mendrisio">
         </div>
-        <main>
-            <p>Grazie per il tuo messaggio!</p>
-        </main>
+        <div id="navIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="boldFont">Orsolya Cadenazzi</div>
+        <div>Counsellor in Analisi Transazionale</div>
+        <div>in formazione</div>
+    </header>
+
+    <div id="motto">
+        <div>
+            <p class="h2Title">Grazie per il tuo messaggio!</p>
+        </div>
     </div>
 
+
+    <footer>
+
+        <div class="contact">
+
+            <div class="data-container">
+                <p>Orsolya Cadenazzi</p>
+                <p>Tel: <a href="tel:+41798236646">+41 79 823 66 46</a></p>
+                <p>Email: <a href="mailto:info@counselling-mendrisio.com">info@counselling-mendrisio.com</a></p>
+            </div>
+
+            <div class="data-container">
+                <p>Residenza Fior di Loto</p>
+                <p>Via al Gas 12/G-12/F</p>
+                <p>6850 Mendrisio</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</div>
+
+<script>
+
+
+    window.setTimeout(function(){
+        window.location.replace("index.html")
+    }, 5000);
+
+
+</script>
 
 </body>
 </html>
