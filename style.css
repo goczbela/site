@@ -111,7 +111,7 @@ table {
     --c-viola-dark: #EF2DAA;
     --c-viola: #FF86D5;
     --c-viola-light: #FFF1FA;
-    --c-green: #DFDF81;
+    --c-green: #f7f7be;
     --c-green-light: #F6FFF8;
     --c-grey: #EBEDEF;
     --c-grey-light: #F9FBFE;
@@ -123,6 +123,7 @@ table {
 /* nav icon */
 
 #navIcon {
+    display: none;
     width: 20px;
     height: 15px;
     position: relative;
@@ -277,10 +278,6 @@ header div:nth-child(5)
 
 /* motto, .h2Title, h2, .txt, .list, .boldFont */
 
-#motto {
-
-}
-
 #motto div {
     width: fit-content;
     margin: 40px auto 30px;
@@ -301,8 +298,10 @@ h2 {
 }
 
 h3 {
-    margin: 20px auto 10px;
-    font-size: 18px;
+    margin: 30px auto 20px;
+    font-family: "Bad Script", cursive;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 ul {
@@ -332,37 +331,42 @@ ul {
 
 /* prenota button */
 
-#prenota {
+#prenota,
+#submit {
     display: flex;
     width: 200px;
     height: 44px;
     margin: 30px auto 50px;
-    background-color: var(--c-viola-dark);
-    border: 2px solid var(--c-viola);
     border-radius: 22px;
     font-family: "Quicksand" , "sans-serif";
     font-weight: 500;
     font-size: 20px;
-    color: var(--c-viola-light);
     align-items: center;
     text-align: center;
 }
 
-#prenota p {
+#prenota {
+    background-color: var(--c-viola-dark);
+    border: 2px solid var(--c-viola);
+    color: var(--c-viola-light);
+}
+
+#submit {
+    background-color: var(--c-green);
+    border: 1px solid var(--c-viola-dark);
+    color: var(--c-black);
+}
+
+#prenota p,
+#submit p {
     margin-left: auto;
 }
 
-#prenota img {
+#prenota img,
+#submit img {
     height: 28px;
     margin: 0px auto 0px 8px;
 }
-
-.membro {
-    margin: 30px auto 10px;
-}
-
-
-
 
 
 
@@ -387,13 +391,21 @@ ul {
     max-width: 1282px;
 }
 .orsi img {
-    width: 80%;
+    width: 50%;
     max-width: 1536px;
+}
+
+
+
+/* Membro dell’SGfB e CoSì */
+
+.membro {
+    margin: 30px auto 20px;
 }
 
 #membroContainer {
     display: grid;
-    grid-template-row: 1fr;
+    margin-bottom: 20px;
 }
 
 #sgfb,
@@ -406,61 +418,75 @@ ul {
 
 /* email form */
 
+.formHeader {
+    margin: 20px auto 20px auto;
+}
+
+.formHeader p {
+    margin: 8px auto;
+    font-size: 18px;
+}
+
 label, input, button {
     display: block;
     margin: 0 auto;
 }
 
 #emailForm {
-    width: 90%;
-    max-width: 600px;
-    margin: 50px auto;
-    border: solid 1px #d8d8d8;
-    border-radius: 20px;
+    background-color: var(--c-viola);
+    width: 100%;
+    margin: 50px auto 0px;
     padding: 30px 0;
 }
 .inputField label,
 .inputField input,
 .inputField textarea {
-    font-family: 'Roboto', sans-serif;
     width: 80%;
-    padding: 5px 7px;
-    border-radius: 7px;
+    max-width: 500px;
+    padding: 8px 8px;
+    border-radius: 8px;
 }
 .inputField input,
 .inputField textarea {
-    background-color: #ffffff;
+    background-color: var(--c-viola-light);
     margin-bottom: 20px;
     font-size: 16px;
+    border: 1px solid var(--c-viola-dark);
 }
 .inputField label {
     font-size: 12px;
 }
-#submit {
-    width: 60%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    border: solid 2px #d8d8d8;
-    border-radius: 7px;
-    background-color: #d8d8d8;
-    color: #0d0d0d;
-    margin: 30px auto 30px;
-    padding: 5px;
+.inputField textarea {
+    resize: none;
 }
 
 
 
+/* contact infos */
 
-
-
-footer {
-    color: #d8d8d8;
-    padding-bottom: 200px;
+.contact {
+    background-color: var(--c-black);
+    padding: 30px 0px 200px;
 }
 
+.contact h3 {
+    color: var(--c-viola);
+}
 
+.data-container {
+    color: var(--c-viola-light);
+    margin-bottom: 20px;
+}
+
+.data-container a,
+.map a p {
+    color: var(--c-viola-light);
+    text-decoration: underline;
+}
+
+.data-container p {
+    margin-bottom: 8px;
+}
 
 
 
