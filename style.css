@@ -395,6 +395,11 @@ ul {
     max-width: 1536px;
 }
 
+.map img {
+    width: 100%;
+    max-width: 517px;
+}
+
 
 
 /* Membro dell’SGfB e CoSì */
@@ -482,6 +487,10 @@ label, input, button {
 .map a p {
     color: var(--c-viola-light);
     text-decoration: underline;
+}
+
+.map a p {
+    margin: 20px auto;
 }
 
 .data-container p {
